@@ -1,3 +1,112 @@
 body{
     background-color: aqua;
 }
+.pbc-cm-form{
+    position: relative;
+}
+.pbc-cm-form:before,
+.pbc-cm-form:after{
+    content: ""; display: table;
+}
+
+.pbc-cm-form:after{
+    clear: both;
+}
+
+.pbc-cm-column{
+    width: 35%;
+    padding: 8px 28px;
+    float: left;
+}
+.pbc-cm-form label{
+    display:block;
+    padding: 40px 5px 5px 2px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.pbc-cm-form input,
+.pbc-cm-form textarea,
+.pbc-cm-form select{
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1.4em;
+    padding: 5px 10px;
+    color: rgb(16, 137, 244);
+    display: block;
+    width: 100%;
+    background: transparent;
+}
+.pbc-cm-form input,
+.pbc-cm-form textarea{
+    border: 3px solid rgb(16, 137, 244) ;
+
+}
+.pbc-cm-form textarea{
+    min-height: 200px;
+}
+.pbc-cm-form input:focus,
+.pbc-cm-form textarea:focus,
+.pbc-cm-form label:active + input,
+.pbc-cm-form label:active + textarea{
+    outline: none;
+    border: 3px solid #126ca1;
+}
+.pbc-cm-form select:focus{
+    outline: none;
+}
+::-webkit-input-placeholder{/* WebKit browsers */
+    color: #126ca1;
+    font-style: italic;
+}
+:-moz-placeholder{/* Mozilla Firefox 4 to 18 */
+color: #126ca1;
+font-style: italic;
+}
+::-moz-placeholder{/* Mozilla Firefox 19+ */
+    color: #126ca1;
+    font-style: italic;
+}
+:-ms-input-placeholder{/* Internet Explorer 10+ */
+    color: #126ca1;
+    font-style: italic;
+}
+.pbc-cm-submit-wrap{
+    text-align: center;
+    padding-top: 42px;
+    clear:both;
+}
+.pbc-cm-form input.pbc-cm-submit{
+    background: #126ca1;
+    border: none;
+    width: auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 2px;
+    letter-spacing: 1px;
+
+}
+.pbc-cm-form input.pbc-cm-submit:hover{
+    background: #1375ad;
+}
+@media screen and (max-widht: 70em) {
+    .pbc-cm-column{
+        widht: 50%
+    }
+    .pbc-cm-column:nth-child(3){
+        widht: 100%
+    }
+    
+}
+@media  screem and (max-widht: 48em) {
+    .pbc-cm-column{
+        width:100%;
+        padding: 10px;
+
+    }
+    
+}
