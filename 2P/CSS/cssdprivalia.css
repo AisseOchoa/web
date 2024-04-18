@@ -1,3 +1,16 @@
 .text-small{
     font-size: 15px;
 }
+p{
+    text-align: center;
+    font-size: initial;
+    font-size: 25px;
+}
+
+.mt-auto{
+    font-size: 30px;
+}
+
+.nav-item1{
+    text-align: right;
+}
